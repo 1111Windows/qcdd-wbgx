@@ -251,19 +251,6 @@
     </div>
 </details>
 
-<details>
-    <summary>软件</summary>
-    <div class="lazy-load-container" data-content-id="content2">
-        <div class="lazy-load-placeholder">点击加载内容</div>
-    </div>
-</details>
-
-<details>
-    <summary>网页</summary>
-    <div class="lazy-load-container" data-content-id="content3">
-        <div class="lazy-load-placeholder">点击加载内容</div>
-    </div>
-</details>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -363,36 +350,55 @@
                                 <p>原作者允许了添加了，但由于加甘心大营救导致我的电脑访问网页很卡，所以不添加了</p>
                             </details>
                         </details>
+                        <details>
+                            <summary>软件</summary>
+                            <h2>复活浅唱</h2>
+                            <p>复活浅唱是站长基于复活劳大纺制版修改的一个安卓软件(其实站长根本不会安卓开发，站长只是把图片和部分改了)，由于复活牢大纺制版部分地方加密，所以部分地方显示牢大。</p>
+                            <p>下载地址</p>
+                            <a href="https://1win.eu.org/wbgx/复活浅唱1.3.1.APK">点击这里</a>(浅唱盒Q群有3.1.2特供版，但是如果在这里下的不能直接更新到3.1.2版本)</p>
+                            <!--恭喜你！找到了彩蛋的传送门。请进入到下面的网站，获得虚拟彩蛋吧-->
+                            <!--https://1win.eu.org-->
+                        </details>
+                        <details>
+                            <summary>网页</summary>
+                            <h2>浅唱盒</h2>
+                            <p>猫鼠玩家的语音盒</p>
+                            <p>网页链接:<a href="https://wbgx.pw">https://wbgx.pw</a> </p>
+                            <h2>我不甘心原网页</h2>
+                            <p>就是这个网页的原版</p>
+                            <p>网页链接:(需要加速器)<a href="https://cndys.vercel.app">"https://cndys.vercel.app/"</a></p>
+                            <p>项目地址:<a href="https://github.com/ab8ing/cndys">"https://github.com/ab8ing/cndys"</a></p>
+                            <p>重制版:<a href="https://wbgx.pw/li/a/old.html">https://wbgx.pw/li/a/old.html</a></p>
+                            <h2>爱唱TV</h2>
+                            <p>适合那些被浅梦拉黑的人看大帝直播</p>
+                            <p>网页链接:<a href="https://ichang.tv.qqdd.pw/">https://ichang.tv.qqdd.pw/</a></p>
+                         </details>
+
                    `
-                } else if(contentId === 'content2'){
-                    content = `
-                        <h2>复活浅唱</h2>
-                        <p>复活浅唱是站长基于复活劳大纺制版修改的一个安卓软件(其实站长根本不会安卓开发，站长只是把图片和部分改了)，由于复活牢大纺制版部分地方加密，所以部分地方显示牢大。</p>
-                        <p>下载地址</p>
-                        <a href="https://1win.eu.org/wbgx/复活浅唱1.3.1.APK">点击这里</a>(浅唱盒Q群有3.1.2特供版，但是如果在这里下的不能直接更新到3.1.2版本)</p>
-                        <!--恭喜你！找到了彩蛋的传送门。请进入到下面的网站，获得虚拟彩蛋吧-->
-                        <!--https://1win.eu.org-->
-                    `;
-                } else if (contentId === 'content3'){
-                    content =  `
-                        <h2>浅唱盒</h2>
-                        <p>猫鼠玩家的语音盒</p>
-                        <p>网页链接:<a href="https://wbgx.pw">https://wbgx.pw</a> </p>
-                        <h2>我不甘心原网页</h2>
-                        <p>就是这个网页的原版</p>
-                        <p>网页链接:(需要加速器)<a href="https://cndys.vercel.app">"https://cndys.vercel.app/"</a></p>
-                        <p>项目地址:<a href="https://github.com/ab8ing/cndys">"https://github.com/ab8ing/cndys"</a></p>
-                        <p>重制版:<a href="https://wbgx.pw/li/a/old.html">https://wbgx.pw/li/a/old.html</a></p>
-                        <h2>爱唱TV</h2>
-                        <p>适合那些被浅梦拉黑的人看大帝直播</p>
-                        <p>网页链接:<a href="https://ichang.tv.qqdd.pw/">https://ichang.tv.qqdd.pw/</a></p>
-                    `;
                 }
                 container.innerHTML = content; // 将加载的内容添加到容器中
             });
         });
     });
 </script>
+
+<style>
+    .lazy-load-container {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-top: 5px;
+    }
+    .lazy-load-placeholder {
+        cursor: pointer;
+        color: #007bff;
+        text-align: center;
+        padding: 10px;
+        user-select: none; /* 防止文本被选中 */
+    }
+    .lazy-load-placeholder:hover {
+        text-decoration: underline;
+    }
+</style>
 
 <style>
     .lazy-load-container {
