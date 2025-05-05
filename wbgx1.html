@@ -90,13 +90,13 @@
 
     <audio id="music" src="cndy.mp3" hidden></audio>
     <audio id="music1" src="wbgx.mp3" hidden></audio>
-    <audio id="music2" src="/wbgx/002.mp3" loop hidden></audio>
-    <audio id="music3" src="/wbgx/【浅唱大帝&啸劳】喜欢你（好きだ）.mp3" loop hidden></audio>
-    <audio id="music4" src="/wbgx/studio_video_1699048609402.mp3" hidden></audio>
-    <audio id="music5" src="/wbgx/abab.mp3" loop hidden></audio>
-    <audio id="music6" src="/wbgx/miku miku oo ee oo但是浅唱大蛇.mp3" loop hidden></audio>
-    <audio id="music7" src="/wbgx/最终鬼畜浅唱大帝.mp3" loop hidden></audio>
-    <audio id="music8" src="/wbgx/GOOD浅唱.mp3" loop hidden></audio>
+    <audio id="music2" src="./wbgx/002.mp3" loop hidden></audio>
+    <audio id="music3" src="./wbgx/【浅唱大帝&啸劳】喜欢你（好きだ）.mp3" loop hidden></audio>
+    <audio id="music4" src="./wbgx/studio_video_1699048609402.mp3" hidden></audio>
+    <audio id="music5" src="./wbgx/abab.mp3" loop hidden></audio>
+    <audio id="music6" src="./wbgx/甘心甘心 oo ee oo但是浅唱大蛇.mp3" loop hidden></audio>
+    <audio id="music7" src="./wbgx/最终鬼畜浅唱大帝.mp3" loop hidden></audio>
+    <audio id="music8" src="./wbgx/GOOD浅唱.mp3" loop hidden></audio>
 
     <img src="wbgx.jpg" onClick="play1()" style="width:150px;padding:35px;" class="click" />
     <p style="font-size:36px;" onClick="play1()">我不甘心</p>
@@ -207,24 +207,42 @@
             }
         </script>
         
+        <script>
+            window.onload = function() {
+                var audio = document.getElementById('music8');
+                audio.pause(); //打开页面时无音乐
+
+            }
+
+            function play8() {
+                var audio = document.getElementById('music8');
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                    audio.currentTime = 0; //音乐从头播放
+                }
+            }
+        </script>
 
     </div>
 	  <details>
 	    <summary>音频下载&网页说明</summary>
-	    <p>网页bug一堆</p>
+	    <p>现在修复了网站音频点击无法播放的BUG</p>
 	    <p><a href="https://1win.eu.org/wbgx.html">网站线路1(速度不是很稳定,运行在infinityfree的免费云服务器上)</a></p>
 	    <p><a href="https://wbgx.1win.eu.org/">网站线路2(Cloudflare Pages)</a></p>
+	    <p><a href="https://wbgx.1lin.dpdns.org/">网站线路3(Cloudflare Pages)</a></p>
 	    <p>下面是音频的下载链接</p>
-	    <p>https://1win.eu.org/cndy.mp3</p>
-	    <p>https://1win.eu.org/wbgx.mp3</p>
-	    <p>https://1win.eu.org/wbgx/002.mp3</p>
-	    <p>https://1win.eu.org/wbgx/浅唱大帝&啸劳 喜欢你（好きた）.mp3</p>
-	    <p>https://1win.eu.org/wbgx/studio_video_1699048609402.mp3</p>
-	    <p>https://1win.eu.org/wbgx/abab.mp3</p>
-	    <p>https://1win.eu.org/wbgx/甘心甘心 oo ee oo.mp3</p>
-	    <p>https://1win.eu.org/wbgx/最终鬼畜浅唱大帝.mp3</p>
-	    <p>https://1win.eu.org/wbgx/GOOD浅唱.mp3</p>
-	    <p>https://1win.eu.org/wbgx/人才.mp3</p>
+	    <p><a href="https://1win.eu.org/cndy.mp3">cndy</a></p>
+	    <p><a href="https://1win.eu.org/wbgx.mp3">wbgx</a></p>
+	    <p><a href="https://1win.eu.org/wbgx/002.mp3">我不甘心不妙曲</a></p>
+	    <p><a href="https://1win.eu.org/wbgx/浅唱大帝&啸劳 喜欢你（好きた）.mp3">浅唱大帝&啸劳 喜欢你</a></p>
+	    <p><a href="https://1win.eu.org/wbgx/studio_video_1699048609402.mp3">wbgx(谁家孩子)</a></p>
+	    <p><a href="https://1win.eu.org/wbgx/abab.mp3">浅唱大帝/屑作</a></p>
+	    <p><a href="https://1win.eu.org/wbgx/甘心甘心 oo ee oo.mp3>甘心甘心oeo</a></p>
+	    <p><a href="https://1win.eu.org/wbgx/最终鬼畜浅唱大帝.mp3">最终鬼畜浅唱大帝</a></p>
+	    <p><a href="https://1win.eu.org/wbgx/GOOD浅唱.mp3">GOOD浅唱</a></p>
+	    <p><a href="https://1win.eu.org/wbgx/人才.mp3">人才</a></p>
 	  </details>
 
     <details>
@@ -299,7 +317,7 @@
             <summary>会说话的浅唱</summary>
             <p>请在bilibili上搜索会说话的浅唱</p>
         </details>
-        
+        </details>
         <details>
             <summary>软件</summary>
             <h2>复活浅唱</h2>
